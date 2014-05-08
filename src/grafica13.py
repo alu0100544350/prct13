@@ -1,0 +1,25 @@
+#!encoding:UTF-8
+#!/usr/bin/python
+import pylab as pl
+
+x=[0.00001,0.000025,0.000034,0.000045,0.000056]
+x2=[0,10,20,30,40]
+
+y=[100,100,80,80,60]
+y2=[50,50,100,100,80]
+y3=[30,30,50,100,100]
+y4=[60,70,70,100,100]
+y5=[0.000256,0.000126,0.000120,0.000119,0.000117]
+
+pl.subplot(211)
+pl.plot(x,y,color='b',label='10')
+pl.plot(x,y2,color='r',label='20')
+pl.plot(x,y3,color='g',label='30')
+pl.plot(x,y4,color='y',label='40')
+
+pl.subplot(212)
+pl.plot(x2,y5,color='r')
+
+pl.legend()
+
+pl.show()
